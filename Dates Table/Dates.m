@@ -22,7 +22,7 @@ let
     FirstDayOfTheWeek = Day.Monday, 
 
     // Set the dates Culture
-    Culture = "en-US",
+    Culture = "fr-FR",
 
     /* 
         End Configuration 
