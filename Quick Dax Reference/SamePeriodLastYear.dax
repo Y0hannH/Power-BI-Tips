@@ -1,0 +1,12 @@
+/* 
+    Replace [MyMeasure] with the actual measure in your datamodel
+    Replace DimDates[Date] with the actual date table in your model
+*/ 
+
+VAR __PREV_YEAR = CALCULATE(
+    [MyMeasure],
+    SAMEPERIODLASTYEAR(DimDates[Date]),
+    ALL(DimDates)
+)
+
+RETURN __PREV_YEAR
